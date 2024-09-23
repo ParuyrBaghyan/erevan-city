@@ -1,0 +1,59 @@
+@import "/src/styles/mixin.scss";
+
+.branches-page {
+  display: flex;
+
+  .addresses-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px 15px;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      & > p {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .each-store {
+        display: flex;
+        justify-content: space-between;
+
+        & > span {
+          display: flex;
+          gap: 0.4rem;
+
+          & > span:nth-child(1) {
+            width: 30px;
+            height: 30px;
+            background-color: #b812121f;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $red;
+          }
+
+          & > span:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+          }
+        }
+
+        .store-image {
+          width: 120px;
+          height: 120px;
+          border-radius: 7px;
+          background-position: center !important;
+          background-size: cover !important;
+        }
+      }
+    }
+  }
+}

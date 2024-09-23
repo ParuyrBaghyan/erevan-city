@@ -1,0 +1,46 @@
+{
+  "header": [
+    {
+      "id": "1",
+      "name": "Զեղչեր",
+      "path": "/products/discounts"
+    },
+    {
+      "id": "2",
+      "name": "Նորույթ",
+      "path": "/products/novelty"
+    },
+    {
+      "id": "3",
+      "name": "Հավաքածուներ",
+      "path": "/collections"
+    },
+    {
+      "id": "4",
+      "name": "Բլոգ",
+      "path": "/blog"
+    },
+    {
+      "id": "5",
+      "name": "Պրոմո",
+      "path": "/promo"
+    },
+    {
+      "id": "6",
+      "name": "Մասնաճյուղեր",
+      "path": "/branches"
+    },
+    {
+      "id": "7",
+      "name": "Զեղչեր գործընկերներից",
+      "path": "/partner-discounts"
+    }
+  ],
+  "metadata": {
+    "title": {
+      "default": "Երևան սիթի օնլայն սուպերմարկետ",
+      "template": "%s - Yerevan City"
+    },
+    "description": "Կատարեք գնումներ Երևան սիթիից"
+  }
+}

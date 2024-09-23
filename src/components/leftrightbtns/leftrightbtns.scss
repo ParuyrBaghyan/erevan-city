@@ -1,0 +1,25 @@
+@import "/src/styles/mixin.scss";
+
+.leftrightbtns {
+    display: flex;
+    gap: 0.3rem;
+    padding-right: 10px;
+
+    & > span {
+      width: 44px;
+      height: 44px;
+      background: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transition: 0.2s ease-in-out;
+      font-size: 22px;
+      color: #6a6a6a;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $red;
+        color: white;
+      }
+    }}

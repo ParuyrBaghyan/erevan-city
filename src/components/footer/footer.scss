@@ -1,0 +1,247 @@
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 10px #0000001a;
+  padding-top: 10vh;
+  margin-top: 10vh;
+
+  & > div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    & > div {
+      width: 100%;
+      display: flex;
+      gap: 3rem;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .footer-section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+
+        & > span {
+          font-size: 13px;
+          letter-spacing: 0.5px;
+          cursor: pointer;
+          transition: 0.3s;
+
+          &:hover {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .footer-section:nth-child(1) {
+        & > img {
+          width: 50px;
+          height: 50px;
+          padding: 8px 8px 3px;
+          box-shadow: 0 0 6px #00000040;
+        }
+      }
+
+      .contact-apps {
+        display: flex;
+        gap: 0.7rem;
+        
+        & > span:nth-child(2),
+        & > span:nth-child(1) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px !important;
+          height: 40px !important;
+          border-radius: 50%;
+          background-color: #1778f2;
+          font-size: 30px;
+          color: white;
+        }
+
+        & > span:nth-child(2) {
+          background: linear-gradient(
+            44deg,
+            #feb60b,
+            #fdb10c 10%,
+            #fdaf0d 22%,
+            #ea4042 56%,
+            #a62aa1 81%,
+            #a129a9
+          );
+        }
+
+        & > img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      .footer-section:nth-child(4) {
+        width: 23%;
+
+        & > span:nth-child(3) {
+          display: flex;
+          gap: 0.5rem;
+          & > img {
+            width: 30%;
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      padding: 30px 0px;
+      border-top: 1px solid rgb(0 0 0 / 34%);
+      text-align: center;
+    }
+  }
+
+  /* Media Queries for Responsiveness */
+
+  @media (max-width: 1200px) {
+    padding-top: 8vh;
+
+    & > div {
+      width: 90%;
+
+      & > div {
+        gap: 2rem;
+        
+        .footer-section:nth-child(1) {
+          & > img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+
+        .contact-apps {
+          gap: 0.5rem;
+
+          & > span:nth-child(1),
+          & > span:nth-child(2) {
+            width: 35px !important;
+            height: 35px !important;
+            font-size: 24px;
+          }
+
+          & > img {
+            width: 35px;
+            height: 35px;
+          }
+        }
+
+        .footer-section:nth-child(4) {
+          width: 30%;
+          
+          & > span:nth-child(3) {
+            gap: 0.3rem;
+
+            & > img {
+              width: 25%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding-top: 5vh;
+
+    & > div {
+      width: 95%;
+
+      & > div {
+        flex-direction: column;
+        align-items: center;
+
+        .footer-section {
+          text-align: center;
+
+          & > span {
+            font-size: 12px;
+          }
+        }
+
+        .contact-apps {
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem;
+
+          & > img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+
+        .footer-section:nth-child(4) {
+          width: 100%;
+
+          & > span:nth-child(3) {
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
+
+            & > img {
+              width: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 4vh;
+
+    & > div {
+      width: 100%;
+
+      & > div {
+        gap: 1rem;
+
+        .footer-section {
+          & > span {
+            font-size: 11px;
+          }
+        }
+
+        .contact-apps {
+          & > img {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding-top: 3vh;
+
+    & > div {
+      width: 100%;
+
+      & > div {
+        gap: 0.5rem;
+
+        .footer-section {
+          & > span {
+            font-size: 10px;
+          }
+        }
+
+        .contact-apps {
+          & > img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}

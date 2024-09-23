@@ -1,0 +1,46 @@
+{
+  "header": [
+    {
+      "id": "1",
+      "name": "Discounts",
+      "path": "/products/discounts"
+    },
+    {
+      "id": "2",
+      "name": "Novelty",
+      "path": "/products/novelty"
+    },
+    {
+      "id": "3",
+      "name": "Collections",
+      "path": "/collections"
+    },
+    {
+      "id": "4",
+      "name": "Blog",
+      "path": "/blog"
+    },
+    {
+      "id": "5",
+      "name": "Promo",
+      "path": "/promo"
+    },
+    {
+      "id": "6",
+      "name": "Branches",
+      "path": "/branches"
+    },
+    {
+      "id": "7",
+      "name": "Partner Discounts",
+      "path": "/partner-discounts"
+    }
+  ],
+  "metadata": {
+    "title": {
+      "default": "Yerevan City Online Supermarket",
+      "template": "%s - Yerevan City"
+    },
+    "description": "Shop from Yerevan City"
+  }
+}

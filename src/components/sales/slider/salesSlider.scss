@@ -1,0 +1,62 @@
+.sales-slider-container {
+  width: 100%;
+  overflow: hidden; 
+  position: relative;
+}
+
+.sales-slider-wrapper {
+  display: flex; 
+  flex-wrap: nowrap;
+  gap: 1rem;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.sales-slider-item {
+  flex: 0 0 auto; 
+  width: 6%; /* Keep the size of the items constant */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px #00000029;
+  cursor: pointer;
+
+  img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+}
+
+/* Make the slider scrollable on smaller screens */
+@media (max-width: 1200px) {
+  .sales-slider-wrapper {
+    overflow-x: auto; /* Allow horizontal scrolling */
+    scrollbar-width: thin; /* Customize scrollbar appearance */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  .sales-slider-wrapper::-webkit-scrollbar {
+    height: 6px; /* Height of horizontal scrollbar */
+  }
+
+  .sales-slider-wrapper::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+  }
+
+  .sales-slider-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+  }
+}
+
+/* Adjust scroll behavior for even smaller screens */
+@media (max-width: 768px) {
+  .sales-slider-wrapper {
+    overflow-x: auto; /* Continue allowing horizontal scrolling */
+  }
+}

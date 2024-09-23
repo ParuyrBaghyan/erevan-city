@@ -1,0 +1,37 @@
+@import "/src/styles/mixin.scss";
+
+.animations-container {
+  // width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 15vh;
+  overflow: hidden;
+  // padding: 0 1rem; // Adding some horizontal padding for better responsiveness on smaller screens
+
+  .animations {
+    @include headerdivbasesize;
+    display: grid; // Switch to grid layout
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // Automatically adjust number of columns
+    gap: 3rem; // Gap between animations
+    justify-items: center; // Center items
+
+    .animation {
+      width: 100%;
+      max-width: 300px; // Limit the maximum width for larger screens
+      height: 300px; // Fixed height
+      border-radius: 50%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .animations {
+      grid-template-columns: repeat(2, 1fr); // Two columns for tablets
+    }
+  }
+
+  @media (max-width: 622px) {
+    .animations {
+      grid-template-columns: 1fr; // Single column for small devices
+    }
+  }
+}

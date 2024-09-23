@@ -1,0 +1,17 @@
+@import "/src/styles/mixin.scss";
+
+.nav-active{
+    color: black !important;
+    border-radius: 18px;
+    padding: 10px;
+    background-color: $silverFon;
+    border: 1px solid rgb(153, 153, 153);
+}
+
+.navlink{
+    color: black !important;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+}

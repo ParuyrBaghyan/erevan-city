@@ -1,0 +1,86 @@
+@import "/src/styles/mixin.scss";
+
+.collections-slider-container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default to 4 columns */
+  gap: 1rem;
+
+  .collections-item {
+    width: 100%;
+    height: 360px; /* Default height */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+    .collections-content-box {
+      background-color: #ffffffd9;
+      width: 70%;
+      padding: 16px 46px 15px 16px;
+      border-radius: 7px;
+      border-bottom-right-radius: 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+
+      & > h1 {
+        font-size: 28px;
+      }
+
+      & > span {
+        font-size: 13px;
+        font-weight: 400;
+        display: -webkit-box; /* Enables the flexbox layout */
+        -webkit-box-orient: vertical; /* Defines the orientation of the flex container */
+        -webkit-line-clamp: 2; /* Limits the number of lines to display */
+        overflow: hidden; /* Hides the overflowing content */
+        text-overflow: ellipsis; /* Adds an ellipsis at the end of the visible text */
+        max-height: 3em; /* Optional: Approximate height for 2 lines based on line height */
+        line-height: 1.5em; /* Adjust the line height */
+      }
+
+      & > svg {
+        transition: .3s;
+      }
+    }
+
+    &:hover .collections-content-box > svg {
+      padding-left: 10px;
+    }
+  }
+
+  /* Media Queries for Responsiveness */
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr); /* Show 3 columns on medium screens */
+    
+    .collections-item {
+      height: 300px; /* Adjust height for medium screens */
+    }
+  }
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr); /* Show 2 columns on tablets */
+    
+    .collections-item {
+      height: 250px; /* Adjust height for tablets */
+    }
+
+    &:nth-child(1) {
+      grid-row: auto; /* Remove special styling for large items */
+      height: auto; /* Adjust height to fit content */
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; /* Show 1 column on smaller screens */
+    
+    .collections-item {
+      height: 200px; /* Adjust height for smaller screens */
+    }
+  }
+}

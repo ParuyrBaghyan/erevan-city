@@ -1,0 +1,29 @@
+@import "/src/styles/mixin.scss";
+
+.totop {
+  width: 45px;
+  height: 45px;
+  background-color: $red;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  z-index: 999;
+  bottom: 5%;
+  left: 1%;
+  transition: opacity 0.3s ease, transform 0.3s ease; // Added transition for opacity and transform
+  opacity: 0; // Default hidden
+  transform: translateY(20px); // Default translate down
+
+  &.visible {
+    opacity: 1; // Visible when the button should appear
+    transform: translateY(0); // Move to original position
+  }
+
+  & > svg {
+    color: white;
+  }
+}

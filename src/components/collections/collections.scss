@@ -1,0 +1,21 @@
+.collections-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+
+  & > div {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    & > div:nth-child(1) {
+      display: flex;
+      justify-content: space-between;
+    }
+    .collections-slider {
+      overflow: hidden;
+    }
+  }
+}

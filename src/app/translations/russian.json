@@ -1,0 +1,46 @@
+{
+  "header": [
+    {
+      "id": "1",
+      "name": "Скидки",
+      "path": "/products/discounts"
+    },
+    {
+      "id": "2",
+      "name": "Новинки",
+      "path": "/products/novelty"
+    },
+    {
+      "id": "3",
+      "name": "Коллекции",
+      "path": "/collections"
+    },
+    {
+      "id": "4",
+      "name": "Блог",
+      "path": "/blog"
+    },
+    {
+      "id": "5",
+      "name": "Промо",
+      "path": "/promo"
+    },
+    {
+      "id": "6",
+      "name": "Филиалы",
+      "path": "/branches"
+    },
+    {
+      "id": "7",
+      "name": "Скидки от партнёров",
+      "path": "/partner-discounts"
+    }
+  ],
+  "metadata": {
+    "title": {
+      "default": "Ереван Сити онлайн супермаркет",
+      "template": "%s - Ереван Сити"
+    },
+    "description": "Совершайте покупки в Ереван Сити"
+  }
+}

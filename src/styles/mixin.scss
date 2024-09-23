@@ -1,0 +1,9 @@
+$red:  #df0026;
+$silverFon: #f6f7f8;
+
+@mixin headerdivbasesize {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,11 @@
+.active {
+  color: black !important;
+  border-radius: 18px;
+  padding: 10px;
+}
+
+.navlink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
